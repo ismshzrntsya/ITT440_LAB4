@@ -17,7 +17,7 @@ int main(int argc, char*argv[])
 		printf("Could not create socket");
 	}
 
-	server.sin_addr.s_addr = inet_addr("192.168.56.101");	//Enter the ip addr of Server VM
+	server.sin_addr.s_addr = inet_addr("192.168.56.102");	//Enter the ip addr of Server VM
 	server.sin_family = AF_INET;
 	server.sin_port = htons(22);
 
