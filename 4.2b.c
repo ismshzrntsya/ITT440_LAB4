@@ -12,7 +12,7 @@ int main(int argc, char*argv[])
 
 	//Create socket
 	socket_desc=socket(AF_INET,SOCK_STREAM,0);
-	if(socket_desc=-1)
+	if(socket_desc==-1)
 	{
 		printf("Could not create socket");
 	}
@@ -26,7 +26,6 @@ int main(int argc, char*argv[])
 	if(bind(socket_desc,(struct sockaddr*)&server, sizeof(server))<0)
 	{
 		puts("bind failed");
-		return 1;
 	}
 	puts("bind done");
 
